@@ -10,12 +10,13 @@
         <script>
             var linkElement = document.createElement('a');
             linkElement.setAttribute('href','https://www.youtube.com/');
+            linkElement.setAttribute('title', 'site do youtube');
 
             var textElement = document.createTextNode ('Acessar YouTube');
             linkElement.appendChild (textElement);
 
             var containerElement = document.querySelector('#app');
-            linkElement.appendChild (linkElement);
+            containerElement.appendChild (linkElement);
         </script>
     </body>
 </html>
