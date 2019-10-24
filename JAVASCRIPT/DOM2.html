@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Manipulando a dom</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="app">
+            
+        </div>
+        <script>
+            var linkElement = document.createElement('a');
+            linkElement.setAttribute('href','https://www.youtube.com/');
+
+            var textElement = document.createTextNode ('Acessar YouTube');
+            linkElement.appendChild (textElement);
+
+            var containerElement = document.querySelector('#app');
+            linkElement.appendChild (linkElement);
+        </script>
+    </body>
+</html>
